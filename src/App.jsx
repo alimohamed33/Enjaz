@@ -8,6 +8,7 @@ import {
   HowItWorks,
   Navbar,
   MobileNavbar,
+  AppSteps,
 } from "./components";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <HowItWorks />
       <ClientsOpenion />
       <Features />
+      <AppSteps />
       <Contact />
       <Footer />
     </main>
