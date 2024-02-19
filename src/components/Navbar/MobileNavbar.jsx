@@ -1,15 +1,15 @@
-import { navLinks } from "../../utils/data";
-import { useEffect, useRef, useState } from "react";
-import { BiMenuAltLeft } from "react-icons/bi";
-import { IoClose } from "react-icons/io5";
-import classes from "./navbar.module.css";
+import { navLinks } from '../../utils/data';
+import { useEffect, useRef, useState } from 'react';
+import { BiMenuAltLeft } from 'react-icons/bi';
+import { IoClose } from 'react-icons/io5';
+import classes from './navbar.module.css';
 
 function MobileNavbar() {
   const navRef = useRef();
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 1) {
         if (navRef.current) {
           navRef.current.style.cssText = `
@@ -36,7 +36,11 @@ function MobileNavbar() {
     >
       <div className="container mx-auto w-full flex items-center justify-between gap-x-24">
         <a to="#">
-          <img src="/assets/images/enjaz-logo.png" alt="Enjaz logo" />
+          <img
+            src="/assets/images/enjaz-logo.svg"
+            alt="Enjaz logo"
+            className="max-w-[55px]"
+          />
         </a>
 
         <button onClick={() => setOpenMenu(!openMenu)} className="text-6xl">

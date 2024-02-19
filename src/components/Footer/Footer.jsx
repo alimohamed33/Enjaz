@@ -1,4 +1,4 @@
-import { footerLinks } from "../../utils/data";
+import { footerLinks } from '../../utils/data';
 
 function Footer() {
   return (
@@ -6,10 +6,14 @@ function Footer() {
       <div className="section-container">
         <div className="flex items-start gap-8 lg:flex-row flex-col">
           <div className="flex-1 lg:text-right text-center">
-            <img src="/assets/images/enjaz-logo.png" alt="Enjaz logo" />
+            <img
+              src="/assets/images/enjaz-logo.svg"
+              alt="Enjaz logo"
+              className="max-w-[85px] max-lg:mx-auto"
+            />
             <p className=" max-w-[100%] text-[#626563] my-4 text-lg font-semibold ">
               تطبيق يسهل علي الأفراد امكانية مبايعة المركبات آلياً وذلك بعد فحص
-              المركبة فنياً والاتفاق علي سعر وحدوث تراضي بين كل من الطرفين{" "}
+              المركبة فنياً والاتفاق علي سعر وحدوث تراضي بين كل من الطرفين{' '}
             </p>
 
             <div className="flex items-center gap-x-2 lg:justify-start justify-center">
