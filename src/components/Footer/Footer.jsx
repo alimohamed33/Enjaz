@@ -3,10 +3,14 @@ import { footerLinks } from "../../utils/data";
 function Footer() {
   return (
     <footer>
-      <div className="section-container" style={{padding:"100px"}}>
+      <div className="section-container" style={{ padding: "100px" }}>
         <div className="flex items-start gap-8 lg:flex-row flex-col">
           <div className="flex-1 lg:text-right text-center">
-          <img src="/assets/images/logo1.svg" alt="Enjaz logo" width={70}/>
+            <img
+              src="/assets/images/enjaz-logo.svg"
+              alt="Enjaz logo"
+              className="max-w-[85px] max-lg:mx-auto"
+            />
             <p className=" max-w-[100%] text-[#626563] my-4 text-lg font-semibold ">
               تطبيق يسهل علي الأفراد امكانية مبايعة المركبات آلياً وذلك بعد فحص
               المركبة فنياً والاتفاق علي سعر وحدوث تراضي بين كل من الطرفين{" "}
