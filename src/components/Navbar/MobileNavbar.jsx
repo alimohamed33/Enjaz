@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 import classes from "./navbar.module.css";
+import { Link } from "react-router-dom";
 
 function MobileNavbar() {
   const navRef = useRef();
@@ -63,11 +64,11 @@ function MobileNavbar() {
             const { id, text, path } = link;
             return (
               <li key={id}>
-                <a href={path}>
+                <Link to={path}>
                   <button className="text-[#fff] text-lg font-medium">
                     {text}
                   </button>
-                </a>
+                </Link>
               </li>
             );
           })}
