@@ -3,15 +3,14 @@ import { footerLinks } from "../../utils/data";
 function Footer() {
   return (
     <footer>
-      <div className="section-container">
+      <div className="section-container" style={{padding:"100px"}}>
         <div className="flex items-start gap-8 lg:flex-row flex-col">
           <div className="flex-1 lg:text-right text-center">
-            <img src="/assets/images/enjaz-logo.png" alt="Enjaz logo" />
+          <img src="/assets/images/logo1.svg" alt="Enjaz logo" width={70}/>
             <p className=" max-w-[100%] text-[#626563] my-4 text-lg font-semibold ">
               تطبيق يسهل علي الأفراد امكانية مبايعة المركبات آلياً وذلك بعد فحص
               المركبة فنياً والاتفاق علي سعر وحدوث تراضي بين كل من الطرفين{" "}
             </p>
-
             <div className="flex items-center gap-x-2 lg:justify-start justify-center">
               <img src="/assets/icons/Inastagram.svg" alt="inastagram" />
               <img src="/assets/icons/Whatsapp.svg" alt="Whatssap" />

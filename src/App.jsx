@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import {
-  ClientsOpenion,
-  Contact,
-  Features,
+import { 
+  Contact, 
   Footer,
   Hero,
   HowItWorks,
   Navbar,
   MobileNavbar,
-  AppSteps,
+  ClientsOpenion,
+  Features,
+  Screens,
 } from "./components";
+import { Route, Routes } from "react-router-dom";
+import MobileScreens from "./components/Screens/MobileScreens";
 
 function App() {
   const [isMobile, setIsMobile] = useState(
@@ -32,12 +34,14 @@ function App() {
   return (
     <main>
       {isMobile ? <MobileNavbar /> : <Navbar />}
-      <Hero />
-      <HowItWorks />
-      <ClientsOpenion />
-      <Features />
-      <AppSteps />
-      <Contact />
+      <Routes>
+      <Route path="/" element={<Hero />} /> 
+      <Route path="/how-it-works" element={<HowItWorks />} /> 
+      <Route path="/opinions" element={<ClientsOpenion />}/>  
+      <Route path="/screens" element={isMobile ? <MobileScreens /> : <Screens />}/>  
+      <Route path="/features" element={<Features />}/> 
+      <Route path="/contact" element={<Contact />} /> 
+    </Routes>
       <Footer />
     </main>
   );

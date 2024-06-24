@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 import classes from "./navbar.module.css";
+import { Link } from "react-router-dom";
 
 function MobileNavbar() {
   const navRef = useRef();
@@ -35,9 +36,9 @@ function MobileNavbar() {
       className="bg-white py-[0.5rem] fixed top-0 w-full z-[999999999] ease-in-out duration-300"
     >
       <div className="container mx-auto w-full flex items-center justify-between gap-x-24">
-        <a to="#">
-          <img src="/assets/images/enjaz-logo.png" alt="Enjaz logo" />
-        </a>
+        <Link href="/">
+          <img src="/assets/images/logo1.svg" alt="Enjaz logo" width={70} />
+        </Link>
 
         <button onClick={() => setOpenMenu(!openMenu)} className="text-6xl">
           <BiMenuAltLeft className="fill-[#1BAC4B]" />
@@ -58,12 +59,12 @@ function MobileNavbar() {
           {navLinks.map((link) => {
             const { id, text, path } = link;
             return (
-              <li key={id}>
-                <a href={path}>
-                  <button className="text-[#fff] text-lg font-medium">
+              <li key={id} onClick={() => setOpenMenu(false)}>
+                <Link to={path}>
+                  <button className="text-[#fff] text-lg font-semibold">
                     {text}
                   </button>
-                </a>
+                </Link>
               </li>
             );
           })}

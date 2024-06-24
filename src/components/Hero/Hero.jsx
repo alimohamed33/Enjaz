@@ -24,11 +24,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1" style={{ position: "relative" }}>
           <img
-            src="/assets/images/hero-image.png"
+            src="/assets/New folder/Untitled-2.png"
             alt="hero section image"
             className="max-w-full"
+            style={{ width: "650px" }}
           />
         </div>
       </div>
