@@ -1,8 +1,18 @@
+import { useEffect } from "react";
 import { features } from "../../utils/data";
+import "./features.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Features() {
+
+  useEffect(()=>{
+    AOS.init();
+  },[])
+  
   return (
-    <section className="section-container" id="features">
+    <section className="section-container" id="features" data-aos="fade-down" data-aos-easing="linear"
+    >
       <h2 className="mb-[1rem] sm:mb-[2rem] text-center text-4xl font-bold">
         <span className="text-[#1BAC4B]">مميزاتنا</span>
       </h2>

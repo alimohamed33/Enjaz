@@ -2,8 +2,8 @@ import { contact } from "../../utils/data";
 
 function Contact() {
   return (
-    <section id="contact" className="bg-[#9FF2BB14]">
-      <div className="section-container">
+    <section id="contact" className="bg-[#9FF2BB14] contact">
+      <div className="section-container" style={{position:"relative"}}>
         <div className="flex items-center justify-center gap-x-24 lg:flex-row flex-col gap-y-8">
           <div>
             <h2 className="mb-[1rem] sm:mb-[2rem] text-4xl font-bold">

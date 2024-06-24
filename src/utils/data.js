@@ -4,27 +4,32 @@ export const navLinks = [
   {
     id: nanoid(),
     text: "الرئيسية",
-    path: "#",
+    path: "/",
   },
   {
     id: nanoid(),
     text: "كيف يعمل",
-    path: "#how-it-works",
+    path: "/how-it-works",
   },
   {
     id: nanoid(),
     text: "الآراء",
-    path: "#opinions",
+    path: "/opinions",
+  },
+  {
+    id: nanoid(),
+    text: "الشاشات ",
+    path: "/screens",
   },
   {
     id: nanoid(),
     text: "مميزاتنا",
-    path: "#features",
+    path: "/features",
   },
   {
     id: nanoid(),
     text: "تواصل معنا",
-    path: "#contact",
+    path: "/contact",
   },
 ];
 
@@ -89,6 +94,136 @@ export const clients = [
     rate: "4.9/5",
     name: "Sara Ahmed",
   },
+  {
+    id: nanoid(),
+    title: "يوصي به",
+    text: "تطبيق آمن وسريع ويتيميز بواجهة استخدام سهلة وبسيطة ",
+    image: "/assets/new/photo_2024-03-16_00-49-22.jpg",
+    calender: "10/1",
+    rate: "4.9/5",
+    name: "Amr Ahmed",
+  },
+];
+// export const screens = [
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/cardatails_nav.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/transfer_nav2.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/transfer_nav.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/status.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/buyer.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/fingerprint.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/forgetpass.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/transfer.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/seller.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/login.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/datails.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/notifications.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/signup.png",
+//   },
+//   {
+//     id: nanoid(),
+//     image: "/assets/New folder/steps.png",
+//   },
+
+// ];
+export const screens = [
+  {
+    id: 1,
+    image: "/assets/new/1.jpg",
+  },
+  {
+    id: 2,
+    image: "/assets/new/2.jpg",
+  },
+  {
+    id: 3,
+    image: "/assets/new/3.jpg",
+  },
+  {
+    id: 4,
+    image: "/assets/new/4.jpg",
+  },
+  {
+    id: 5,
+    image: "/assets/new/5.jpg",
+  },
+  {
+    id: 6,
+    image: "/assets/new/6.jpg",
+  },
+  {
+    id: 7,
+    image: "/assets/new/7.jpg",
+  },
+  {
+    id: 8,
+    image: "/assets/new/8.jpg",
+  },
+  {
+    id: 9,
+    image: "/assets/new/9.jpg",
+  },
+  {
+    id: 10,
+    image: "/assets/new/10.jpg",
+  },
+  {
+    id: 11,
+    image: "/assets/new/11.jpg",
+  },
+  {
+    id: 12,
+    image: "/assets/new/12.jpg",
+  },
+  {
+    id: 13,
+    image: "/assets/new/13.jpg",
+  },
+  {
+    id: 14,
+    image: "/assets/new/14.jpg",
+  },
+  {
+    id: 15,
+    image: "/assets/new/15.jpg",
+  },
 ];
 
 export const features = [
@@ -150,10 +285,11 @@ export const footerLinks = [
     id: nanoid(),
     title: "اللينكات السريعة",
     links: [
-      { id: nanoid(), path: "#", text: "الرئيسية" },
-      { id: nanoid(), path: "#", text: "كيف يعمل" },
-      { id: nanoid(), path: "#", text: "الآراء" },
-      { id: nanoid(), path: "#", text: "تواصل معنا" },
+      { id: nanoid(), path: "/", text: "الرئيسية" },
+      { id: nanoid(), path: "/how-it-works", text: "كيف يعمل" },
+      { id: nanoid(), path: "/opinions", text: "الآراء" },
+      { id: nanoid(), path: "/features", text: "مميزاتنا" },
+      { id: nanoid(), path: "/contact", text: "تواصل معنا" },
     ],
   },
   {

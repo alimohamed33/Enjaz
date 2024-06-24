@@ -15,7 +15,7 @@ function ClientsOpenion() {
   };
 
   return (
-    <section className="bg-[#9ff2bb33]" id="opinions">
+    <section className="bg-[#9ff2bb33] opinions" id="opinions">
       <div className="section-container">
         <h2 className="mb-[1rem] sm:mb-[2rem] text-center text-4xl font-bold">
           آراء <span className="text-[#1BAC4B]">عملائنا</span>
@@ -49,7 +49,16 @@ function ClientsOpenion() {
                     </div>
                   </div>
 
-                  <img src={image} alt="" />
+                  <img
+                    src={image}
+                    alt=""
+                    style={{
+                      width: "110px",
+                      borderRadius: "30px 0",
+                      height: "130px",
+                      objectFit: "cover",
+                    }}
+                  />
                 </article>
               </div>
             );

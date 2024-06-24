@@ -1,15 +1,16 @@
-import { navLinks } from '../../utils/data';
-import { useEffect, useRef, useState } from 'react';
-import { BiMenuAltLeft } from 'react-icons/bi';
-import { IoClose } from 'react-icons/io5';
-import classes from './navbar.module.css';
+import { navLinks } from "../../utils/data";
+import { useEffect, useRef, useState } from "react";
+import { BiMenuAltLeft } from "react-icons/bi";
+import { IoClose } from "react-icons/io5";
+import classes from "./navbar.module.css";
+import { Link } from "react-router-dom";
 
 function MobileNavbar() {
   const navRef = useRef();
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 1) {
         if (navRef.current) {
           navRef.current.style.cssText = `
@@ -35,13 +36,13 @@ function MobileNavbar() {
       className="bg-white py-[0.5rem] fixed top-0 w-full z-[999999999] ease-in-out duration-300"
     >
       <div className="container mx-auto w-full flex items-center justify-between gap-x-24">
-        <a to="#">
+        <Link to="/">
           <img
             src="/assets/images/enjaz-logo.svg"
             alt="Enjaz logo"
             className="max-w-[55px]"
           />
-        </a>
+        </Link>
 
         <button onClick={() => setOpenMenu(!openMenu)} className="text-6xl">
           <BiMenuAltLeft className="fill-[#1BAC4B]" />
@@ -62,12 +63,12 @@ function MobileNavbar() {
           {navLinks.map((link) => {
             const { id, text, path } = link;
             return (
-              <li key={id}>
-                <a href={path}>
+              <li key={id} onClick={() => setOpenMenu(false)}>
+                <Link to={path}>
                   <button className="text-[#fff] text-lg font-medium">
                     {text}
                   </button>
-                </a>
+                </Link>
               </li>
             );
           })}

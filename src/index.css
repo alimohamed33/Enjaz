@@ -6,11 +6,46 @@ body {
   scroll-behavior: smooth;
 }
 body * {
-  font-family: "Almarai", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 @layer utilities {
   .section-container {
     @apply container mx-auto lg:py-32 max-lg:py-20;
   }
+}
+section {
+  margin-top: 50px !important;
+  padding-bottom: 10px !important;
+}
+.contact,
+.opinions {
+  margin-top: 120px !important;
+}
+
+#contact {
+  background-image: url(../public/assets/new/photo_2024-03-16_00-48-47.jpg) !important;
+  background-size: cover;
+  position: relative;
+}
+#contact::before {
+  position: absolute;
+  content: "";
+  background-color: #0000007d;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hide-bg ,
+.hide-bg-mobile{
+  mix-blend-mode: multiply !important;
+  filter: contrast(1);
+  max-width: fit-content;
+}
+.hide-bg{
+  width: 750px;
+}
+.hide-bg-mobile{
+  width: 500px;
 }
